@@ -16,9 +16,11 @@
 
 2026-10-08 本机只读读取：Windows 11 家庭版 中文版（64 位），DisplayVersion **26H2**，完整 OS 构建 **26300.9457**；OpenAI.Codex 商店包 **26.1002.7124.0**；`ntfs.sys` 文件版本 **10.0.26100.8875**，`bindflt.sys` 文件版本 **10.0.26100.9278**。
 
-版本来源：注册表 `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion` 的 DisplayVersion/CurrentBuildNumber/UBR、`Win32_OperatingSystem`、`Get-AppxPackage` 和系统驱动文件 VersionInfo。没有公开用户名、设备名、序列号或原始日志。
+2026-10-08 作者补充反馈：此前使用 **Windows 11 25H2** 时也发生过同类 Codex 内存泄漏。此前完整 OS 构建号、驱动版本、Codex 版本及测量记录未知；这是作者的历史问题反馈，本次没有单独复测 25H2 上的修复效果，也不能将社区报告中的 25H2 构建号当成作者的版本。
 
-截图记载的 `ntfs.sys 10.0.26100.9444` 与本次实读不同。不能据此推断当时的 Windows 构建或更新状态；以上记为制作时环境，而不是经过追溯的修复当日环境。
+当前 26H2 环境的版本来源：注册表 `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion` 的 DisplayVersion/CurrentBuildNumber/UBR、`Win32_OperatingSystem`、`Get-AppxPackage` 和系统驱动文件 VersionInfo。没有公开用户名、设备名、序列号或原始日志。
+
+截图记载的 `ntfs.sys 10.0.26100.9444` 与本次实读不同。不能据此推断当时的 Windows 构建或更新状态；本次读取的数据记为制作时环境，而不是经过追溯的修复当日环境。
 
 ## 只读采样
 
