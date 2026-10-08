@@ -1,5 +1,7 @@
 # Codex Windows 内存泄漏规避 Skill
 
+简体中文 | [English](README.en.md)
+
 将 Windows 商店版 Codex 的 `%APPDATA%\Codex\web\Codex` 目录链接安全替换成内容一致的普通文件夹，规避与该链接访问相关的内存泄漏。作者已在自己的机器上确认有效。
 
 **适用范围：** Windows MSIX Codex、该路径为 Junction/SymbolicLink，并出现系统非分页池持续增长。一般进程内存占用或已经是普通目录，不应直接使用转换操作。社区提出的 `bindflt.sys` 机制尚不能视为 Codex 官方根因确认，详见 [证据与诊断](codex-windows-memory-leak/references/diagnosis.md)。
