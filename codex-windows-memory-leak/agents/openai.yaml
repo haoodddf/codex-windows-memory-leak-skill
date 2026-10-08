@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codex Windows 内存泄漏规避"
+  short_description: "检查商店版 Codex 的 AppData 链接，安全转换、回滚并验证内存趋势"
